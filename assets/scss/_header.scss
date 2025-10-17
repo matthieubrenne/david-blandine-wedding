@@ -85,6 +85,7 @@
 .navbar-collapse {
     @media #{$md} {
         position: absolute;
+        margin-top: 10px;
         top: 100%;
         left: 0;
         width: 100%;
@@ -92,6 +93,8 @@
         z-index: 9;
         @include box-shadow (0px 15px 20px 0px rgba(0, 0, 0, 0.1));
         padding: 5px 12px;
+        border-radius: 10px;
+        border: 1px solid $theme-color;
     }
 
     @media #{$xs} {
@@ -103,6 +106,8 @@
         z-index: 9;
         @include box-shadow (0px 15px 20px 0px rgba(0, 0, 0, 0.1));
         padding: 5px 12px;
+        border-radius: 10px;
+        border: 1px solid $theme-color;
     }
 }
 
