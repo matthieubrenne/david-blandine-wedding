@@ -1,0 +1,95 @@
+
+
+
+/*===========================
+       10.CONTACT css 
+===========================*/
+
+.contact_area{
+    input, textarea {
+        border: 1px solid #D59A57;
+        border-radius: 5px;
+    }
+
+    label {
+        font-family: "Niconne", cursive;
+        font-size: 24px;
+    }
+
+    button {
+        background-color: #D59A57;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken(#D59A57, 5%);
+        }
+    }
+
+    input, textarea {
+        &::placeholder {
+            font-family: 'Poppins', sans-serif;
+            color: #d1d1d1;
+        }
+    }
+}
+
+p{
+    &.form-message.success,
+    &.form-message.error {
+        font-size: 16px;
+        color: #333;
+        background: #ddd;
+        padding: 10px 15px;
+        margin-top: 15px;
+        margin-left: 15px;
+        
+        &.form-message.error{
+            color: #f00;
+        }
+    }
+}
+
+.contact_wrapper{
+    padding: 80px 110px;
+    @include box-shadow (0px 3px 32px 0px rgba($shadow, 0.16));
+    background-color: $white;
+    
+    @media #{$md}{
+        padding: 30px 50px;
+    }
+    @media #{$xs}{
+        padding: 30px;
+    }
+}
+
+
+.single_form{
+    margin-top: 30px;
+    
+    & textarea,
+    & input{
+        padding: 0 25px;
+        border: 2px solid #D59A57;
+        border-radius: 5px;
+        height: 55px;
+        width: 100%;
+        color: $body-color;
+        width: 100%;
+    }
+    
+    & textarea{
+        padding-top: 15px;
+        resize: none;
+        height: 185px;
+    }
+}
+
+
+
+
+
+
