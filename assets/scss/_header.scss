@@ -305,19 +305,20 @@
 
 
 .header_slider{
-    
+    height: 100dvh;
 }
 
 .single_slider{
-    height: 800px;
+    // height: 800px;
+    height: 100%;
     position: relative;
     
-    @media #{$desktop}{
-        height: 900px;
-    }
-    @media #{$xs}{
-        height: 600px;
-    }
+    // @media #{$desktop}{
+    //     height: 900px;
+    // }
+    // @media #{$xs}{
+    //     height: 600px;
+    // }
 
     &::before{
         position: absolute;

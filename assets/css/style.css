@@ -833,19 +833,13 @@ p {
 }
 
 /*===== SLIDER =====*/
+.header_slider {
+  height: 100dvh;
+}
+
 .single_slider {
-  height: 800px;
+  height: 100%;
   position: relative;
-}
-@media only screen and (min-width: 1400px) {
-  .single_slider {
-    height: 900px;
-  }
-}
-@media (max-width: 767px) {
-  .single_slider {
-    height: 600px;
-  }
 }
 .single_slider::before {
   position: absolute;
